@@ -1,0 +1,47 @@
+body {
+  transition: .5s background, .5s color;
+}
+
+header {
+  transition: .5s background;
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  padding: 1.5rem 0;
+  background: white;
+  border-bottom: 2px solid #dcdcdc;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+nav {
+  background: #000;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+nav > div {
+  width: 80%;
+  max-width: 550px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  color: white;
+}
+
+article {
+  width: 90%;
+  max-width: 880px;
+  margin: auto;
+}
+
+footer {
+  transition: .5s background;
+  padding: 1.5rem 0;
+  background: #dcdcdc;
+  text-align: center;
+}

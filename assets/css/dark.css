@@ -1,0 +1,16 @@
+/*
+  media=(prefers-color-scheme: dark)
+*/
+
+body {
+  background: #323232;
+  color: #fff;
+}
+
+header {
+  background: #111;
+}
+
+footer {
+  background: #111;
+}
