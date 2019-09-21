@@ -13,5 +13,6 @@ function darkModeSwitch(status) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  darkModeSwitch(+isDarkMode());
+  const isDm = +isDarkMode();
+  if (isDm) darkModeSwitch(true);
 });
