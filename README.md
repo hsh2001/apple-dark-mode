@@ -28,8 +28,21 @@ CSS는 사용자 기기가 어떤 테마를 사용하는지 알려주는 `prefer
 }
 ```
 
+일부 브라우저는 `prefers-color-scheme` 미디어쿼리를 지원하지 않거나 실제 사용자 기기의 시스템 테마 설정과는 다른 값을 가지고 있습니다.
+
+✅ : 지원함
+
+❌ : 지원하지 않거나 시스템 테마 설정과 다른 값을 가짐.
+
+- ✅ (iOS / iPasOS / MacOS) Safari
+- ✅ (MacOS) Chrome
+- ✅ (MacOS) FireFox
+- ❌ (iOS / iPasOS) Chrome
+- ❌ (iOS / iPasOS) FireFox
+- ❌ (iOS / iPasOS / MacOS) Naver Whale
+
 #### JavaScript
-JS에서는 CSS의 미디어쿼리를 빌려와 이를 확인해야합니다.
+JS에서는 CSS의 미디어쿼리를 빌려와 이를 확인해야합니다. CSS의 미디어쿼리에 의존하기 때문이 `prefers-color-scheme` 미디어쿼리 지원여부에 따라 호환성이 결정됩니다.
 ```javascript
 const darkModeMeidaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
