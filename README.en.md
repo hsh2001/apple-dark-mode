@@ -3,6 +3,10 @@
 - [한국어](https://github.com/tmdgus0084/apple-dark-mode/blob/master/README.md)
 - [English](https://github.com/tmdgus0084/apple-dark-mode/blob/master/README.en.md)
 
+
+> This document requires translation!
+
+
 ## 목차
 1. [다크모드란?](#다크모드란)
 2. [다크모드 인식하기](#다크모드-인식하기)
