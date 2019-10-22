@@ -41,7 +41,7 @@ CSS는 사용자 기기가 어떤 테마를 사용하는지 알려주는 `prefer
 
 
 #### JavaScript
-JS에서는 CSS의 미디어쿼리를 빌려와 이를 확인해야합니다. CSS의 미디어쿼리에 의존하기 때문이 `prefers-color-scheme` 미디어쿼리 지원여부에 따라 호환성이 결정됩니다.
+JS에서는 CSS의 미디어쿼리를 빌려와 이를 확인해야합니다. CSS의 미디어쿼리에 의존하기 때문에 `prefers-color-scheme` 미디어쿼리 지원여부에 따라 호환성이 결정됩니다.
 ```javascript
 const darkModeMeidaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
