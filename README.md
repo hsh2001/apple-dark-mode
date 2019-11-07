@@ -201,4 +201,4 @@ footer {
 감사합니다.
 
 ## 도움을 주신 분들
-- [lqez](https://github.com/lqez)
+- [@lqez](https://github.com/lqez)
