@@ -1,4 +1,7 @@
 # 🌙 다크모드 웹 페이지 디자인
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 - [한국어](https://github.com/tmdgus0084/apple-dark-mode/blob/master/README.md)
 - [English](https://github.com/tmdgus0084/apple-dark-mode/blob/master/README.en.md)
@@ -202,3 +205,16 @@ footer {
 
 ## 도움을 주신 분들
 - [@lqez](https://github.com/lqez)
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
