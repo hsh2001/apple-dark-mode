@@ -203,9 +203,6 @@ footer {
 이 글이 도움이 되었다면 스타⭐️를 눌러주세요!
 감사합니다.
 
-## 도움을 주신 분들
-- [@lqez](https://github.com/lqez)
-
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
