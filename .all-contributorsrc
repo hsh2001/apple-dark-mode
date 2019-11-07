@@ -4,21 +4,13 @@
   "repoType": "github",
   "repoHost": "https://github.com",
   "files": [
-    "README.md"
+    "README.md",
+    "README.en.md",
   ],
   "imageSize": 100,
   "commit": false,
   "contributorsPerLine": 7,
   "contributors": [
-    {
-      "login": "lqez",
-      "name": "Hyunwoo Park",
-      "avatar_url": "https://avatars1.githubusercontent.com/u/579366?v=4",
-      "profile": "https://lqez.github.io",
-      "contributions": [
-        "doc"
-      ]
-    },
     {
       "login": "tmdgus0084",
       "name": "Seung-hyun Hwang",
@@ -26,6 +18,15 @@
       "profile": "https://tmdgus0084.github.io",
       "contributions": [
         "content"
+      ]
+    },
+    {
+      "login": "lqez",
+      "name": "Hyunwoo Park",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/579366?v=4",
+      "profile": "https://lqez.github.io",
+      "contributions": [
+        "doc"
       ]
     }
   ]
