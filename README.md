@@ -211,10 +211,14 @@ footer {
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
+<!-- prettier-ignore -->
+<table>
+  <tr>
+    <td align="center"><a href="https://lqez.github.io"><img src="https://avatars1.githubusercontent.com/u/579366?v=4" width="100px;" alt="Hyunwoo Park"/><br /><sub><b>Hyunwoo Park</b></sub></a><br /><a href="https://github.com/tmdgus0084/apple-dark-mode/commits?author=lqez" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://tmdgus0084.github.io"><img src="https://avatars1.githubusercontent.com/u/32220765?v=4" width="100px;" alt="Seung-hyun Hwang"/><br /><sub><b>Seung-hyun Hwang</b></sub></a><br /><a href="#content-tmdgus0084" title="Content">🖋</a></td>
+  </tr>
+</table>
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
