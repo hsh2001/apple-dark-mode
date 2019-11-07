@@ -1,11 +1,23 @@
 {
-  "projectName": "Apple-Dark-Mode",
+  "projectName": "apple-dark-mode",
   "projectOwner": "tmdgus0084",
   "repoType": "github",
   "repoHost": "https://github.com",
-  "files": ["README.md"],
+  "files": [
+    "README.md"
+  ],
   "imageSize": 100,
   "commit": false,
   "contributorsPerLine": 7,
-  "contributors": []
+  "contributors": [
+    {
+      "login": "lqez",
+      "name": "Hyunwoo Park",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/579366?v=4",
+      "profile": "https://lqez.github.io",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ]
 }
