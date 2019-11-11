@@ -1,7 +1,11 @@
-# 🌙 Darkmode web design
+# 🌙 다크모드 웹 페이지 디자인
 
 - [한국어](https://github.com/tmdgus0084/apple-dark-mode/blob/master/README.md)
 - [English](https://github.com/tmdgus0084/apple-dark-mode/blob/master/README.en.md)
+
+
+> This document requires translation!
+
 
 ## 목차
 1. [다크모드란?](#다크모드란)
