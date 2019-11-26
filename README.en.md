@@ -10,7 +10,7 @@
 4. [Animation](#animation)
 
 ## What is the Dark mode?
-At 2:00 a.m. on September 20, 2019, Apple started a deployment of new operating system, ios 13, for iPhone and iPod touch. Also  on early June, in same year, at the held WWDC2019(The Apple Worldwide Developers Conference), Apple offered the way that web developers can respond to design of Dark mode for new ios13 and previously deployed Macos Mojave. Dark mode is the UI that has a  overall dark appearance, with white writing on a black background unlike before that displayed black letters on a white background. 디자인에 검은색이 많이 사용되기 때문에 아이폰11Pro와 같이 OLED 디스플레이를 사용하는 기기에서는 전력 소모를 줄일 수 있으며 눈도 한결 편안해진다는 장점을 가지고 있습니다. 이 글에서는 보다 통일성 있는 UI 및 UX를 위해 다크모드를 사용 중인 사용자가 웹 사이트에 접속할 경우 자동으로 웹 사이트를 어두운 디자인으로 변경하는 방법을 다룹니다.
+At 2:00 a.m. on September 20, 2019, Apple started a deployment of new operating system, ios 13, for iPhone and iPod touch. Also  on early June, in same year, at the held WWDC2019(The Apple Worldwide Developers Conference), Apple offered the way that web developers can respond to design of Dark mode for new ios13 and deployed Macos Mojave previously. Dark mode is the UI that has a  overall dark appearance, with white writing on a black background unlike before that displayed black letters on a white background. Because black color is used a lot in its design, there are advantages that it can reduce power consumption in device with OLED display like iPhone 11Pro and also make one's eyes feel much more comfortable. For more uniformity UI or UC, this article deal with the way that change a website to dark design automatically when Dark mode user acess the website.
 
 ## 다크모드 인식하기
 사용자가 웹 사이트에 접속한 순간 다크모드를 적용하려면 우선 사용자의 기기가 다크모드를 사용중인지 확인해야 합니다. CSS와 JavaScript에서 이를 위한 방법은 다음과 같습니다.
