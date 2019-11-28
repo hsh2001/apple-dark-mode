@@ -12,17 +12,17 @@
 ## What is the Dark mode?
 At 2:00 a.m. on September 20, 2019, Apple started a deployment of new operating system, ios 13, for iPhone and iPod touch. Also  on early June, in same year, at the held WWDC2019(The Apple Worldwide Developers Conference), Apple offered the way that web developers can respond to design of Dark mode for new ios13 and deployed Macos Mojave previously. Dark mode is the UI that has a  overall dark appearance, with white writing on a black background unlike before that displayed black letters on a white background. Because black color is used a lot in its design, there are advantages that it can reduce power consumption in device with OLED display like iPhone 11Pro and also make one's eyes feel much more comfortable. For more uniformity UI or UC, this article deal with the way that change a website to dark design automatically when Dark mode user acess the website.
 
-## 다크모드 인식하기
-사용자가 웹 사이트에 접속한 순간 다크모드를 적용하려면 우선 사용자의 기기가 다크모드를 사용중인지 확인해야 합니다. CSS와 JavaScript에서 이를 위한 방법은 다음과 같습니다.
+## Recognizing Dark mode
+To apply the Dark mode in the moment that users acess a web site, it needs to make sure user's device is in use before anyting else. The manners for this in CSS and JavaScript are following below text.
 
 #### CSS
-CSS는 사용자 기기가 어떤 테마를 사용하는지 알려주는 `prefers-color-scheme` 미디어쿼리를 지원합니다. `prefers-color-scheme`는 다음과 같은 값을 가질 수 있습니다.
+CSS support mediaquery('prefers-color-scheme) that tell you which theme your device uses CSS. Mediaquery('prefers-color-scheme') can have the following result.
 
-- no-preference: 테마를 알리지 않음.
-- light: 라이트모드를 사용중임.
-- dark: 다크모드를 사용중임.
+- no-preference: Don't notify theme.
+- light: Light mode in use.
+- dark: Dark mode in use.
 
-따라서 아래와 같은 코드를 통해 다크모드를 사용중인 사용자에게만 작동하는 CSS 코드를 작성할 수 있습니다.
+Therefore it can be able to write CSS code that only operate for Dark mode users through the code below.
 ```css
 @media (prefers-color-scheme: dark) {
   body {
@@ -32,7 +32,7 @@ CSS는 사용자 기기가 어떤 테마를 사용하는지 알려주는 `prefer
 }
 ```
 
-아쉽게도 일부 브라우저는 `prefers-color-scheme` 미디어쿼리를 지원하지 않거나 실제 사용자 기기의 시스템 테마 설정과는 다른 값을 가지고 있습니다.
+Unfortunatly, some browsers do not apply 'prefers-color-scheme아쉽게도 일부 브라우저는 `prefers-color-scheme` 미디어쿼리를 지원하지 않거나 실제 사용자 기기의 시스템 테마 설정과는 다른 값을 가지고 있습니다.
 
  - ✅ : 지원함
  - ❌ : 지원하지 않거나 시스템 테마 설정과 다른 값을 가짐.
