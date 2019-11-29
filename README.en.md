@@ -16,7 +16,7 @@ At 2:00 a.m. on September 20, 2019, Apple started a deployment of new operating 
 To apply the Dark mode in the moment that users acess a web site, it needs to make sure user's device is in use before anyting else. The manners for this in CSS and JavaScript are following below text.
 
 #### CSS
-CSS support mediaquery('prefers-color-scheme) that tell you which theme your device uses CSS. Mediaquery('prefers-color-scheme') can have the following result.
+CSS support 'prefers-color-scheme' mediaquery that tell you which theme your device uses CSS. 'prefers-color-scheme' mediaquery can have the following result.
 
 - no-preference: Don't notify theme.
 - light: Light mode in use.
