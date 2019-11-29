@@ -32,10 +32,10 @@ Therefore it can be able to write CSS code that only operate for Dark mode users
 }
 ```
 
-Unfortunatly, some browsers do not apply 'prefers-color-scheme아쉽게도 일부 브라우저는 `prefers-color-scheme` 미디어쿼리를 지원하지 않거나 실제 사용자 기기의 시스템 테마 설정과는 다른 값을 가지고 있습니다.
+Unfortunatly, some browsers do not apply 'prefers-color-scheme' mediaquery or have other result with actual user device's system theme settiong.
 
- - ✅ : 지원함
- - ❌ : 지원하지 않거나 시스템 테마 설정과 다른 값을 가짐.
+ - ✅ : Supported.
+ - ❌ : Not supported or has a different value from the system theme settings.
 
 | OS / Browser  | Safari | Chrome | Firefox | Whale |
 | ------------- |:------:|:------:|:-------:|:-----:|
@@ -45,7 +45,7 @@ Unfortunatly, some browsers do not apply 'prefers-color-scheme아쉽게도 일�
 
 
 #### JavaScript
-JS에서는 CSS의 미디어쿼리를 빌려와 이를 확인해야합니다. CSS의 미디어쿼리에 의존하기 때문에 `prefers-color-scheme` 미디어쿼리 지원여부에 따라 호환성이 결정됩니다.
+In JS, you have to borrow CSS's mediaquery and check it. Because CSS depends on mediaquery, compatibility is decided in accordance with support status of 'prefers-color-scheme' mediaquery.
 ```javascript
 const darkModeMeidaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
@@ -61,7 +61,7 @@ darkModeMeidaQuery.addListener(updateForDarkModeChange);
 updateForDarkModeChange();
 ```
 
-이제 다음과 같은 코드를 적용해서 다크모드를 지원하는 데 성공했습니다.
+Now, we applied the following code and succeed supporting Dark mode.
 
 ```css
 @media (prefers-color-scheme: dark) {
@@ -80,9 +80,9 @@ updateForDarkModeChange();
 }
 ```
 
-![다크모드](img/dark-diff.png)
+![Dark mode](img/dark-diff.png)
 
-다크모드와 관련된 CSS 코드는 모두 하나의 미디어쿼리 속에 있습니다. 따라서 다크모드의 CSS 코드는 `dark.css`라는 파일에 따로 담아두고 `link` 태그의 `media` 속성을 활용해 파일 단위의 미디어쿼리로 조작할 수 있습니다.
+All CSS codes related with Dark mode are in one mediaquery. Therefore, CSS codes of Dark mode are put aside in file named 'dark.css' and can be controlled with mediaquery of file-level as utilizing 'media' property of 'link' tag.
 
 #### dark.css
 ```css
@@ -113,7 +113,7 @@ footer {
 ...
 ```
 
-## 다크모드 끄고 켜기
+## Turn Dark mode on and off
 위에서 언급한 다크모드 인식 문법은 iOS13 이상, iPadOS, MacOS Mojave 이상의 일부 브라우저에서만 작동합니다. 최신 버전의 애플 기기가 아니거나 지원하지 않는 브라우저를 사용하고 있다면 작동하지 않습니다. 아래부터는 일반 사용자가 다크모드에 접근하도록 유도하는 방법을 다룹니다.
 
 앞서 파일을 분리하기 위해 추가한 `link` 요소의 `media` 속성을 조작하는 것으로 해당 CSS를 활성화하거나 비활성화할 수 있습니다. 우선 다크모드를 끄고 켜는 JavaScript 함수를 `darkModeSwitch`라고 하고 이를 조작할 버튼을 만듭니다.
@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', function () {
 ## 애니메이션
 다크모드로 변할 때 애니메이션을 추가하면 더욱 완성도 있는 웹 디자인이 됩니다.
 
-![애니메이션](img/ani.gif)
+![Animation](img/ani.gif)
 ```css
 body {
   transition: .5s background, .5s color;
