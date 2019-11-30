@@ -116,7 +116,7 @@ footer {
 ## Turn Dark mode on and off
 The above-mentioned Dark mode recognition grammar only operates some browsers of more than iOS13, iPadOS, MacOS Mojave. If you don't use  apple devices of the latest version or browser or supported browser, it doesn't operate. The following contents deal with methods how to encourage end users to acess the dar k mode.
 
-앞서 파일을 분리하기 위해 추가한 `link` 요소의 `media` 속성을 조작하는 것으로 해당 CSS를 활성화하거나 비활성화할 수 있습니다. 우선 다크모드를 끄고 켜는 JavaScript 함수를 `darkModeSwitch`라고 하고 이를 조작할 버튼을 만듭니다.
+ By controlling the 'link' properties of the 'media' element added to detach a file, 앞서 파일을 분리하기 위해 추가한 `link` 요소의 `media` 속성을 조작하는 것으로 해당 CSS를 활성화하거나 비활성화할 수 있습니다. 우선 다크모드를 끄고 켜는 JavaScript 함수를 `darkModeSwitch`라고 하고 이를 조작할 버튼을 만듭니다.
 ```html
 <p>
   Dark Mode:
