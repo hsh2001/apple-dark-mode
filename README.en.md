@@ -16,7 +16,7 @@ At 2:00 a.m. on September 20(GMT+9), 2019, Apple started a deployment of new ope
 To apply the Dark mode in the moment that users access a web site, it needs to make sure user's device is in use before anyting else. The manners for this in CSS and JavaScript are following below text.
 
 #### CSS
-CSS support 'prefers-color-scheme' mediaquery that tell you which theme your device uses CSS. 'prefers-color-scheme' mediaquery can have the following result.
+CSS support `prefers-color-scheme` mediaquery that tell you which theme your device uses CSS. `prefers-color-scheme` mediaquery can have the following result.
 
 - no-preference: Don't notify theme.
 - light: Light mode in use.
@@ -32,7 +32,7 @@ Therefore it can be able to write CSS code that only operate for Dark mode users
 }
 ```
 
-Unfortunatly, some browsers do not support 'prefers-color-scheme' mediaquery or have other result with actual user device's system theme setting.
+Unfortunatly, some browsers do not support `prefers-color-scheme` mediaquery or have other result with actual user device's system theme setting.
 
  - ✅ : Supported.
  - ❌ : Not supported or has a different value from the system theme settings.
@@ -45,7 +45,7 @@ Unfortunatly, some browsers do not support 'prefers-color-scheme' mediaquery or 
 
 
 #### JavaScript
-In JavaScript, you have to borrow mediaquery of CSS and check it. Because CSS depends on mediaquery, compatibility is decided in accordance with support status of 'prefers-color-scheme' mediaquery.
+In JavaScript, you have to borrow mediaquery of CSS and check it. Because CSS depends on mediaquery, compatibility is decided in accordance with support status of `prefers-color-scheme` mediaquery.
 ```javascript
 const darkModeMeidaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
@@ -82,7 +82,7 @@ Now, we applied the following code and succeed supporting Dark mode.
 
 ![Dark mode](img/dark-diff.png)
 
-All CSS codes related with Dark mode are in one mediaquery. Therefore, CSS codes of Dark mode are put aside in file named 'dark.css' and can be controlled with mediaquery of file-level as utilizing 'media' property of 'link' tag.
+All CSS codes related with Dark mode are in one mediaquery. Therefore, CSS codes of Dark mode are put aside in file named `dark.css` and can be controlled with mediaquery of file-level as utilizing `media` property of `link` tag.
 
 #### dark.css
 ```css
@@ -116,7 +116,7 @@ footer {
 ## Turn Dark mode on and off
 The above-mentioned Dark mode recognition syntax only operates some browsers of more than iOS 13, iPadOS, MacOS Mojave. If you don't use  Apple devices of the latest version or supported browser, it doesn't operate. The following contents handle with methods how to encourage end users to access the Dark mode.
 
- By controlling the 'link' properties of the 'media' element added to detach a file in the last time, you can enable or disable the CSS. First of all, the JavaScript function that turns off and turns on dark mode is called 'darkModeSwitch' and create a button to manipulate it.
+ By controlling the `link` properties of the `media` element added to detach a file in the last time, you can enable or disable the CSS. First of all, the JavaScript function that turns off and turns on dark mode is called `darkModeSwitch` and create a button to manipulate it.
 ```html
 <p>
   Dark Mode:
@@ -126,7 +126,7 @@ The above-mentioned Dark mode recognition syntax only operates some browsers of 
 </p>
 ```
 
-And grant id to added 'link' tag for calling in 'dark.css' from above.
+And grant id to added `link` tag for calling in `dark.css` from above.
 ```html
 <link id="dark-mode-sheet"
       rel="stylesheet"
@@ -134,7 +134,7 @@ And grant id to added 'link' tag for calling in 'dark.css' from above.
       media="(prefers-color-scheme: dark)">
 ```
 
-Define  above-mentioned 'darkModeSwitch'function. Here, we will manipulate the 'link' properties of the 'media' element.
+Define  above-mentioned `darkModeSwitch`function. Here, we will manipulate the `link` properties of the `media` element.
 ```javascript
 function darkModeSwitch(status) {
   document
@@ -148,10 +148,10 @@ function darkModeSwitch(status) {
 
 We have added the function to switch the dark mode off and on easily. However, if the user refreshes the webpage or moves to another page, dark mode is turned off. To solve this problem, save settings to browser by using Cookie and always try to decorate your web page according to this setting.
 
-In this article, we use the 'JavaScript Cookie' library to manipulate a Cookie.
+In this article, we use the `JavaScript Cookie` library to manipulate a Cookie.
 [Learn more](https://github.com/js-cookie/js-cookie)
 
-First, save it as Cookie whenever you change to dark mode. State values have been converted to integer and saved because Cookie saves values as string. And add 'isDarkMode' function bringing this value.
+First, save it as Cookie whenever you change to dark mode. State values have been converted to integer and saved because Cookie saves values as string. And add `isDarkMode` function bringing this value.
 ```javascript
 function isDarkMode() {
   return Cookies.get('darkmode');
