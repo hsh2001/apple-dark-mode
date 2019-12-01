@@ -10,10 +10,10 @@
 4. [Animation](#animation)
 
 ## What is the Dark mode?
-At 2:00 a.m. on September 20, 2019, Apple started a deployment of new operating system, ios 13, for iPhone and iPod touch. Also  on early June, in same year, at the held WWDC2019(The Apple Worldwide Developers Conference), Apple offered the way that web developers can respond to design of Dark mode for new ios13 and deployed Macos Mojave previously. Dark mode is the UI that has a  overall dark appearance, with white writing on a black background unlike before that displayed black letters on a white background. Because black color is used a lot in its design, there are advantages that it can reduce power consumption in device with OLED display like iPhone 11Pro and also make one's eyes feel much more comfortable. For more uniformity UI or UC, this article deal with the way that change a website to dark design automatically when Dark mode user acess the website.
+At 2:00 a.m. on September 20(GMT+9), 2019, Apple started a deployment of new operating system, iOS 13, for iPhone and iPod touch. Also  on early June, in same year, at the held WWDC2019(The Apple Worldwide Developers Conference), Apple offered the way that web developers can respond to design of Dark mode for new iOS 13 and deployed Macos Mojave previously. Dark mode is the UI that has a  overall dark appearance, with white writing on a black background unlike before that displayed black letters on a white background. Because black color is used a lot in its design, there are advantages that it can reduce power consumption in device with OLED display like iPhone 11Pro and also make user's eyes feel much more comfortable. For more uniformity UI or UX, this article deal with the way that change a website to dark design automatically when Dark mode user access the website.
 
 ## Recognizing Dark mode
-To apply the Dark mode in the moment that users acess a web site, it needs to make sure user's device is in use before anyting else. The manners for this in CSS and JavaScript are following below text.
+To apply the Dark mode in the moment that users access a web site, it needs to make sure user's device is in use before anyting else. The manners for this in CSS and JavaScript are following below text.
 
 #### CSS
 CSS support 'prefers-color-scheme' mediaquery that tell you which theme your device uses CSS. 'prefers-color-scheme' mediaquery can have the following result.
@@ -32,7 +32,7 @@ Therefore it can be able to write CSS code that only operate for Dark mode users
 }
 ```
 
-Unfortunatly, some browsers do not apply 'prefers-color-scheme' mediaquery or have other result with actual user device's system theme settiong.
+Unfortunatly, some browsers do not support 'prefers-color-scheme' mediaquery or have other result with actual user device's system theme setting.
 
  - ✅ : Supported.
  - ❌ : Not supported or has a different value from the system theme settings.
@@ -45,7 +45,7 @@ Unfortunatly, some browsers do not apply 'prefers-color-scheme' mediaquery or ha
 
 
 #### JavaScript
-In JS, you have to borrow CSS's mediaquery and check it. Because CSS depends on mediaquery, compatibility is decided in accordance with support status of 'prefers-color-scheme' mediaquery.
+In JavaScript, you have to borrow mediaquery of CSS and check it. Because CSS depends on mediaquery, compatibility is decided in accordance with support status of 'prefers-color-scheme' mediaquery.
 ```javascript
 const darkModeMeidaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
@@ -114,7 +114,7 @@ footer {
 ```
 
 ## Turn Dark mode on and off
-The above-mentioned Dark mode recognition grammar only operates some browsers of more than iOS13, iPadOS, MacOS Mojave. If you don't use  apple devices of the latest version or browser or supported browser, it doesn't operate. The following contents deal with methods how to encourage end users to acess the dar k mode.
+The above-mentioned Dark mode recognition syntax only operates some browsers of more than iOS 13, iPadOS, MacOS Mojave. If you don't use  Apple devices of the latest version or supported browser, it doesn't operate. The following contents handle with methods how to encourage end users to access the Dark mode.
 
  By controlling the 'link' properties of the 'media' element added to detach a file in the last time, you can enable or disable the CSS. First of all, the JavaScript function that turns off and turns on dark mode is called 'darkModeSwitch' and create a button to manipulate it.
 ```html
@@ -146,7 +146,7 @@ function darkModeSwitch(status) {
 }
 ```
 
-We have added the ability to switch the dark mode off and on without difficulty. However, if the user refreshes the webpage or moves to another page, dark mode is turned off. To solve this problem, save settings to browser by using Cookie and always try to decorate your web page according to this setting.
+We have added the function to switch the dark mode off and on easily. However, if the user refreshes the webpage or moves to another page, dark mode is turned off. To solve this problem, save settings to browser by using Cookie and always try to decorate your web page according to this setting.
 
 In this article, we use the 'JavaScript Cookie' library to manipulate a Cookie.
 [Learn more](https://github.com/js-cookie/js-cookie)
@@ -161,11 +161,11 @@ function darkModeSwitch(status) {
   Cookies.set('darkmode', +status);
   document
   .querySelector('#dark-mode-sheet')
-  //중략
+  //omitted
 }
 ```
 
-You should now manipulate the page based on this value when the webpage starts. If there is Cookie value, ignore the dark mode setting of your device and manipulate the page according to the cookie value. If there is no Cookie value, no operation is performed. The stored value is an integer string and changes it back to an integer.
+You should now manipulate the page based on this value when the webpage starts. If there is Cookie value, ignore the dark mode setting of device and manipulate the page according to the cookie value. If there is no Cookie value, no operation is performed. The stored value is an integer string and changes it back to an integer.
 ```javascript
 //the preface omitted
 document.addEventListener('DOMContentLoaded', function () {
@@ -194,7 +194,7 @@ footer {
 }
 ```
 
-The page used for the test can be found by pressing [here(https://tmdgus0084.github.io/apple-dark-mode/)].
+The page used for the test can be found by pressing [here](https://tmdgus0084.github.io/apple-dark-mode/).
 I hope you will explore and develop more resources for user experience of a variety of users.
 If this article helps, press the star⭐️ please!
 Thank you.
