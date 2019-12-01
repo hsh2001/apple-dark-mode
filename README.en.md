@@ -116,7 +116,7 @@ footer {
 ## Turn Dark mode on and off
 The above-mentioned Dark mode recognition grammar only operates some browsers of more than iOS13, iPadOS, MacOS Mojave. If you don't use  apple devices of the latest version or browser or supported browser, it doesn't operate. The following contents deal with methods how to encourage end users to acess the dar k mode.
 
- By controlling the 'link' properties of the 'media' element added to detach a file, 앞서 파일을 분리하기 위해 추가한 `link` 요소의 `media` 속성을 조작하는 것으로 해당 CSS를 활성화하거나 비활성화할 수 있습니다. 우선 다크모드를 끄고 켜는 JavaScript 함수를 `darkModeSwitch`라고 하고 이를 조작할 버튼을 만듭니다.
+ By controlling the 'link' properties of the 'media' element added to detach a file in the last time, you can enable or disable the CSS. First of all, the JavaScript function that turns off and turns on dark mode is called 'darkModeSwitch' and create a button to manipulate it.
 ```html
 <p>
   Dark Mode:
@@ -151,7 +151,7 @@ We have added the ability to switch the dark mode off and on without difficulty.
 In this article, we use the 'JavaScript Cookie' library to manipulate a Cookie.
 [Learn more](https://github.com/js-cookie/js-cookie)
 
-First, save it as a Cookie whenever you change to dark mode. 쿠키는 문자열로 값을 저장하기 때문에 상태값을 정수형으로 변환해서 저장하였습니다. 그리고 이 값을 가져오는 함수 `isDarkMode`도 추가합니다.
+First, save it as Cookie whenever you change to dark mode. State values have been converted to integer and saved because Cookie saves values as string. And add 'isDarkMode' function bringing this value.
 ```javascript
 function isDarkMode() {
   return Cookies.get('darkmode');
@@ -165,10 +165,9 @@ function darkModeSwitch(status) {
 }
 ```
 
-You should now manipulate the page based on this value when the webpage starts. 쿠키값이 있다면 사용자 기기의 다크모드 설정을 무시하고 쿠키값에 따라 페이지를 조작합니다. 만약 쿠키값이 없다면 아무런 조작도 하지 않습니다. 저장된 값은 정수로 이루어진 문자열이므로 이를 다시 정수형으로 변경해줍니다.
-
+You should now manipulate the page based on this value when the webpage starts. If there is Cookie value, ignore the dark mode setting of your device and manipulate the page according to the cookie value. If there is no Cookie value, no operation is performed. The stored value is an integer string and changes it back to an integer.
 ```javascript
-//전략
+//the preface omitted
 document.addEventListener('DOMContentLoaded', function () {
   const isDm = isDarkMode();
   if (isDm != null) darkModeSwitch(+isDm);
