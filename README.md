@@ -16,7 +16,7 @@
 사용자가 웹 사이트에 접속한 순간 다크모드를 적용하려면 우선 사용자의 기기가 다크모드를 사용하고 있는지 확인해야 합니다. CSS와 JavaScript에서 이를 확인하는 방법은 다음과 같습니다.
 
 #### CSS
-CSS는 사용자 기기가 어떤 테마를 사용하는지 알려주는 `prefers-color-scheme` 미디어쿼리를 지원합니다. `prefers-color-scheme`는 다음과 같은 값을 가질 수 있습니다.
+CSS는 사용자 기기가 어떤 테마를 사용하는지 알려주는 prefers-color-scheme 미디어쿼리를 지원합니다. prefers-color-scheme는 다음과 같은 값을 가질 수 있습니다.
 
 - no-preference: 테마를 알리지 않음.
 - light: 라이트모드를 사용중임.
