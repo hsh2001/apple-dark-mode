@@ -1,7 +1,5 @@
 # 🌙 다크모드 웹 페이지 디자인
 
-![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)<!-- ALL-CONTRIBUTORS-BADGE:END -->
-
 - [한국어](https://github.com/tmdgus0084/apple-dark-mode/blob/master/README.md)
 - [English](https://github.com/tmdgus0084/apple-dark-mode/blob/master/README.en.md)
 
@@ -202,23 +200,3 @@ footer {
 이 글이 도움이 되었다면 스타⭐️를 눌러주세요!
 감사합니다.
 
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://tmdgus0084.github.io"><img src="https://avatars1.githubusercontent.com/u/32220765?v=4" width="100px;" alt="Seung-hyun Hwang"/><br /><sub><b>Seung-hyun Hwang</b></sub></a><br /><a href="#content-tmdgus0084" title="Content">🖋</a></td>
-    <td align="center"><a href="https://lqez.github.io"><img src="https://avatars1.githubusercontent.com/u/579366?v=4" width="100px;" alt="Hyunwoo Park"/><br /><sub><b>Hyunwoo Park</b></sub></a><br /><a href="https://github.com/tmdgus0084/apple-dark-mode/commits?author=lqez" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/Bgh0602"><img src="https://avatars1.githubusercontent.com/u/57307366?v=4" width="100px;" alt="Bgh0602"/><br /><sub><b>Bgh0602</b></sub></a><br /><a href="#translation-Bgh0602" title="Translation">🌍</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
