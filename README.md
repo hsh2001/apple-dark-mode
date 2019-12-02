@@ -1,5 +1,6 @@
 # 🌙 다크모드 웹 페이지 디자인
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
+![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 - [한국어](https://github.com/tmdgus0084/apple-dark-mode/blob/master/README.md)
 - [English](https://github.com/tmdgus0084/apple-dark-mode/blob/master/README.en.md)
