@@ -18,7 +18,8 @@
       "contributions": [
         "content",
         "projectManagement",
-        "test"
+        "test",
+        "example"
       ]
     },
     {
@@ -39,5 +40,6 @@
         "translation"
       ]
     }
-  ]
+  ],
+  "skipCi": true
 }
