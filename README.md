@@ -32,7 +32,7 @@ CSS는 사용자 기기가 어떤 테마를 사용하는지 알려주는 `prefer
 }
 ```
 
-그러나, 일부 브라우저는 `prefers-color-scheme` 미디어쿼리를 지원하지 않거나 실제 사용자 기기의 시스템 테마 설정과는 다른 값을 가지고 있습니다.
+그러나, 일부 브라우저는 'prefers-color-scheme' 미디어쿼리를 지원하지 않거나 실제 사용자 기기의 시스템 테마 설정과는 다른 값을 가지고 있습니다.
 
  - ✅ : 지원함
  - ❌ : 지원하지 않거나 시스템 테마 설정과 다른 값을 가짐.
@@ -83,7 +83,7 @@ updateForDarkModeChange();
 
 ![다크모드](img/dark-diff.png)
 
-다크모드와 관련된 CSS 코드는 모두 하나의 미디어쿼리 속에 작성되어 있습니다. 따라서 다크모드의 CSS 코드는 `dark.css`라는 파일에 따로 담아두고 `link` 태그의 `media` 속성을 활용해 파일 단위의 미디어쿼리를 조작할 수 있습니다.
+다크모드와 관련된 CSS 코드는 모두 하나의 미디어쿼리 속에 작성되어 있습니다. 따라서 다크모드의 CSS 코드는 'dark.css'라는 파일에 따로 담아두고 'link' 태그의 'media' 속성을 활용해 파일 단위의 미디어쿼리를 조작할 수 있습니다.
 
 #### dark.css
 ```css
@@ -127,7 +127,7 @@ footer {
 </p>
 ```
 
-그리고 위에서 `dark.css`를 불러오기 위해 추가한 `link` 태그에 id를 부여합니다.
+그리고 위에서 'dark.css'를 불러오기 위해 추가한 'link' 태그에 id를 부여합니다.
 ```html
 <link id="dark-mode-sheet"
       rel="stylesheet"
@@ -135,7 +135,7 @@ footer {
       media="(prefers-color-scheme: dark)">
 ```
 
-위에서 언급한 `darkModeSwitch` 함수를 정의해줍니다. 여기서 `link` 요소의 `media` 속성을 조작할 것입니다.
+위에서 언급한 `darkModeSwitch` 함수를 정의해줍니다. 여기서 'link' 요소의 'media' 속성을 조작할 것입니다.
 ```javascript
 function darkModeSwitch(status) {
   document
@@ -152,7 +152,7 @@ function darkModeSwitch(status) {
 이 글에서는 쿠키의 조작을 위해 JavaScript Cookie 라이브러리를 사용합니다. 
 [자세히보기](https://github.com/js-cookie/js-cookie)
 
-((우선 다크모드로 변경할 때마다)) 이를 쿠키로 저장합니다. 쿠키는 문자열로 값을 저장하기 때문에 상태값을 정수형으로 변환해서 저장하였습니다. 그리고 이 값을 가져오는 함수 `isDarkMode`도 추가합니다.
+((우선 다크모드로 변경할 때마다)) 이를 쿠키로 저장합니다. 쿠키는 문자열로 값을 저장하기 때문에 상태값을 정수형으로 변환해서 저장하였습니다. 그리고 이 값을 가져오는 함수 'isDarkMode'도 추가합니다.
 ```javascript
 function isDarkMode() {
   return Cookies.get('darkmode');
