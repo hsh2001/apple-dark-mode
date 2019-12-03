@@ -130,7 +130,7 @@ You can enable or disable the CSS codes by manipulating the attribute of `media`
 </p>
 ```
 
-Then, assign an id to the `link` tag that you added in order to reference `dark.cs` above.
+Then, assign an id to the `link` tag that you added in order to reference `dark.css` above.
 
 ```html
 <link id="dark-mode-sheet"
