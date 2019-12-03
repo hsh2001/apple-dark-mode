@@ -170,7 +170,7 @@ function darkModeSwitch(status) {
 これからはウェブページが始まるときにこの値にしたがってページを操作しなければなりません。 クッキー値がある場合は、ユーザの機器のダークモード設定を無視し、クッキー値にしたがってページを操作します。もしクッキー値がなかったら何の操作もしません。保存された値は定数で成り立つ文字列なので、これを再び整数型に変更します。
 
 ```javascript
-//전략
+//前略
 document.addEventListener('DOMContentLoaded', function () {
   const isDm = isDarkMode();
   if (isDm != null) darkModeSwitch(+isDm);
