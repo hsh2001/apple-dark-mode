@@ -9,20 +9,20 @@
 3. [Turn Dark mode on and off](#turn-dark-mode-on-and-off)
 4. [Animation](#animation)
 
-## What is the Dark mode?
-At 2:00 a.m. on September 20(GMT+9), 2019, Apple started a deployment of new operating system, iOS 13, for iPhone and iPod touch. Also  on early June, in same year, at the held WWDC2019(The Apple Worldwide Developers Conference), Apple offered the way that web developers can respond to design of Dark mode for new iOS 13 and deployed Macos Mojave previously. Dark mode is the UI that has a  overall dark appearance, with white writing on a black background unlike before that displayed black letters on a white background. Because black color is used a lot in its design, there are advantages that it can reduce power consumption in device with OLED display like iPhone 11Pro and also make user's eyes feel much more comfortable. For more uniformity UI or UX, this article deal with the way that change a website to dark design automatically when Dark mode user access the website.
+## What is the Dark Mode?
+On September 20, 2019, at 2:00 a.m., Apple began to release iOS 13, a new operating system for iPhone and iPod Touch. In addition, at WWDC2019 (Apple WorldWide Developers Conference) held in early June of the same year, developers in Apple provided a way for web developers to control dark mode for iOS13 and MacOS Mojave. Unlike the previous UI, which shows black letters on the white background, Dark Mode shows white letters on the black background. Because the black color is used a lot in the design of the screen, Black Mode has the merit that it can reduce power consumption in devices that use OLED displays, such as the iPhone 11Pro and relieve eyestrain. In this article, I’ll tell you how to automatically change a website to a dark design when users utilizing Dark Mode access the website for more unified UI and UX.
 
 ## Recognizing Dark mode
-To apply the Dark mode in the moment that users access a web site, it needs to make sure user's device is in use before anyting else. The manners for this in CSS and JavaScript are following below text.
+You have to check out whether or not the device of the users is allowed to use Dark Mode in order to apply Dark Mode the moment users access a website. Here's how you can check it on CSS and JavaScript:
 
 #### CSS
-CSS support `prefers-color-scheme` mediaquery that tell you which theme your device uses CSS. `prefers-color-scheme` mediaquery can have the following result.
+CSS supports a 'prefer-color-cheme' media query that tells you what kind of theme the device of users have. 'prefers-color-cheme' can have the following values:
 
-- no-preference: Don't notify theme.
-- light: Light mode in use.
-- dark: Dark mode in use.
+- no-preference: Not telling what kind of theme the device has.
+- light: Using light mode.
+- dark: Using Dark Mode.
 
-Therefore it can be able to write CSS code that only operate for Dark mode users through the code below.
+Therefore, you can create CSS codes that work only for users who are using Dark Mode with the code below.
 ```css
 @media (prefers-color-scheme: dark) {
   body {
@@ -32,10 +32,10 @@ Therefore it can be able to write CSS code that only operate for Dark mode users
 }
 ```
 
-Unfortunatly, some browsers do not support `prefers-color-scheme` mediaquery or have other result with actual user device's system theme setting.
+However, some browsers may don’t support prefers-color-cheme media queries and have different values from the settings of system-theme on the device of users.
 
- - ✅ : Supported.
- - ❌ : Not supported or has a different value from the system theme settings.
+ - ✅ : Supporting prefers-color-cheme media queries.
+ - ❌ : Not supporting it or having different values from the settings of system-theme on the device of users.
 
 | OS / Browser  | Safari | Chrome | Firefox | Whale |
 | ------------- |:------:|:------:|:-------:|:-----:|
@@ -45,7 +45,8 @@ Unfortunatly, some browsers do not support `prefers-color-scheme` mediaquery or 
 
 
 #### JavaScript
-In JavaScript, you have to borrow mediaquery of CSS and check it. Because CSS depends on mediaquery, compatibility is decided in accordance with support status of `prefers-color-scheme` mediaquery.
+In JavaScript, after referencing the media query of the CSS, you check out whether or not the device of users is supporting the prefers-color-cheme media query, determining compatibility of the device
+
 ```javascript
 const darkModeMeidaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
@@ -61,7 +62,7 @@ darkModeMeidaQuery.addListener(updateForDarkModeChange);
 updateForDarkModeChange();
 ```
 
-Now, we applied the following code and succeed supporting Dark mode.
+You can succeed in supporting Dark Mode by applying the following code: 
 
 ```css
 @media (prefers-color-scheme: dark) {
@@ -81,8 +82,7 @@ Now, we applied the following code and succeed supporting Dark mode.
 ```
 
 ![Dark mode](img/dark-diff.png)
-
-All CSS codes related with Dark mode are in one mediaquery. Therefore, CSS codes of Dark mode are put aside in file named `dark.css` and can be controlled with mediaquery of file-level as utilizing `media` property of `link` tag.
+All CSS codes associated with dark mode are written in one media query. Therefore, you can activate the whole media code of a file by using the attribute of media in lilnk tag after writing CSS codes in the file of dark.css 
 
 #### dark.css
 ```css
@@ -114,9 +114,12 @@ footer {
 ```
 
 ## Turn Dark mode on and off
-The above-mentioned Dark mode recognition syntax only operates some browsers of more than iOS 13, iPadOS, MacOS Mojave. If you don't use  Apple devices of the latest version or supported browser, it doesn't operate. The following contents handle with methods how to encourage end users to access the Dark mode.
+The recognition function of Dark Mode works only on some browsers and devices, including iOS13, iPadOS, MacOS Mojave. Dark Mode doesn’t work if you use the latest apple devices or the browsers that’s not supporting the function of prefers-color-scheme media query.
 
- By controlling the `link` properties of the `media` element added to detach a file in the last time, you can enable or disable the CSS. First of all, the JavaScript function that turns off and turns on dark mode is called `darkModeSwitch` and create a button to manipulate it.
+You can enable or disable the CSS codes by manipulating the attribute of media in link tag that you added in order to detach the file. First, make the buttons so that you can control darkModeSwitch, the function of JavaScript that turns off/on Dark Mode.
+ 
+ 
+ 
 ```html
 <p>
   Dark Mode:
@@ -126,7 +129,9 @@ The above-mentioned Dark mode recognition syntax only operates some browsers of 
 </p>
 ```
 
-And grant id to added `link` tag for calling in `dark.css` from above.
+Then, assign an id to the link tag that you added in order to reference dark.cs above.
+
+// 여기까지 번역 완료.
 ```html
 <link id="dark-mode-sheet"
       rel="stylesheet"
