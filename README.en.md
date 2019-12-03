@@ -2,6 +2,7 @@
 
 - [한국어](https://github.com/tmdgus0084/apple-dark-mode/blob/master/README.md)
 - [English](https://github.com/tmdgus0084/apple-dark-mode/blob/master/README.en.md)
+- [日本語](https://github.com/tmdgus0084/apple-dark-mode/blob/master/README.jp.md)
 
 ## Table of contents
 1. [What is the Dark mode?](#what-is-the-dark-mode)
