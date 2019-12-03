@@ -2,6 +2,7 @@
 
 - [한국어](https://github.com/tmdgus0084/apple-dark-mode/blob/master/README.md)
 - [English](https://github.com/tmdgus0084/apple-dark-mode/blob/master/README.en.md)
+- [日本語](https://github.com/tmdgus0084/apple-dark-mode/blob/master/README.jp.md)
 
 ## 목차
 1. [다크모드란?](#다크모드란)
