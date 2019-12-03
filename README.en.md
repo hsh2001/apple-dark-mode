@@ -42,7 +42,7 @@ However, some browsers may don’t support `prefers-color-cheme` media queries a
 | ------------- |:------:|:------:|:-------:|:-----:|
 | iOS           |✅      |❌      |❌      |❌     |
 | iPadOS        |✅      |❌      |❌      |❌     |
-| macOS         |✅      |✅      |✅      |❌     |
+| macOS         |✅      |✅      |✅      |✅     |
 
 
 #### JavaScript
@@ -63,7 +63,7 @@ darkModeMeidaQuery.addListener(updateForDarkModeChange);
 updateForDarkModeChange();
 ```
 
-You can succeed in supporting Dark Mode by applying the following code: 
+You can succeed in supporting Dark Mode by applying the following code:
 
 ```css
 @media (prefers-color-scheme: dark) {
@@ -119,9 +119,9 @@ The recognition function of Dark Mode works only on some browsers and devices, i
 
 
 You can enable or disable the CSS codes by manipulating the attribute of `media` in `link` tag that you added in order to detach the file. First, make the buttons so that you can control `darkModeSwitch`, the function of JavaScript that turns Dark Mode on/off.
- 
- 
- 
+
+
+
 ```html
 <p>
   Dark Mode:
