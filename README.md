@@ -202,3 +202,9 @@ footer {
 다양한 사용자의 사용자 경험을 위해 더 많은 자료를 탐색하고 발전하길 기원합니다.
 이 글이 도움이 되었다면 스타⭐️를 눌러주세요!
 감사합니다.
+
+## 도움을 주신 분들
+- [Seung-hyun Hwang@tmdgus0084](https://github.com/tmdgus0084): 프로젝트 총괄
+- [Hyunwoo Park@lqez](https://github.com/lqez): 오탈자 수정
+- [@Bgh0602](https://github.com/Bgh0602): 영어 번역
+- [@sjbhm18](https://github.com/sjbhm18): 영어 / 일본어 번역 및 문장 개선
