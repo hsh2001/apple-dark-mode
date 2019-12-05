@@ -13,6 +13,15 @@
 ## What is the Dark Mode?
 On September 20, 2019, at 2:00 a.m., Apple began to release iOS 13, a new operating system for iPhone and iPod Touch. In addition, at WWDC2019 (Apple WorldWide Developers Conference) held in early June of the same year, developers in Apple provided a way for web developers to control Dark Mode for iOS13 and MacOS Mojave. Unlike the previous UI, which shows black letters on the white background, Dark Mode shows white letters on the black background. Because the black color is used a lot in the design of the screen, Dark Mode has the merit that it can reduce power consumption in devices that use OLED displays such as the iPhone 11Pro and relieve eyestrain. For more unified UI and UX, I’ll tell you how to automatically change a website to a dark design when users utilizing Dark Mode access the website for more unified UI and UX.
 
+
+## Why should we use Dark Mode ?
+
+Why should we use Dark Mode? That's because it's in fashion these days and looks cool? There's a more fundamental reason in this question.
+
+The most important purpose of a webpage is to convey the information on the webpage clearly to the user. Movie theater staffs turn off the lights in the theater so that they make the inside space dark before the movie starts. That's because If the surrounding elements are too fancy or conspicuous, the focus on the central contents is likely to be distributed outside. Likewise, many dark environments, including Dark Mode, allow you to focus more on the central contents than on the Many dark environments, including dark mode, allow you to focus more on the central content than on the surrounding elements. The simple UI design patterns that we use these days are in a similar vein.
+
+
+
 ## Recognizing Dark mode
 You have to check out whether or not the device of the users is allowed to use Dark Mode in order to apply Dark Mode the moment users access a website. Here's how you can check for it on CSS and JavaScript:
 
@@ -83,7 +92,7 @@ You can succeed in supporting Dark Mode by applying the following code:
 ```
 
 ![Dark mode](img/dark-diff.png)
-All CSS codes associated with Dark Mode are written in one media query. Therefore, you can activate the whole media code of a file by using the attribute of `media` in `lilnk` tag after writing CSS codes in the file of `dark.css`.
+All CSS codes associated with Dark Mode are written in one media query. Therefore, you can activate the whole media code of a file by using the attribute of `media` in `link` tag after writing CSS codes in the file of `dark.css`.
 
 #### dark.css
 ```css
@@ -203,3 +212,11 @@ footer {
 You can see the page used in test by clicking [here](https://tmdgus0084.github.io/apple-dark-mode/).
 I hope you will explore more resources and develop for a wide variety of experiences of many users. Please click this STAR⭐️ if this article is helpful!!
 Thank you for reading.
+
+
+
+## Contributors
+Seung-hyun Hwang@tmdgus0084: Project Manager
+Hyunwoo Park@lqez: Fixing typo
+@Bgh0602: English translation
+@sjbhm18: Proofreading all sentences in Korean(Original Ver.) and translating them into English/Japanese
