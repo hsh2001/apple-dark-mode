@@ -216,7 +216,7 @@ Thank you for reading.
 
 
 ## Contributors
-Seung-hyun Hwang@tmdgus0084: Project Manager
-Hyunwoo Park@lqez: Fixing typo
-@Bgh0602: English translation
-@sjbhm18: Proofreading all sentences in Korean(Original Ver.) and translating them into English/Japanese
+- [Seung-hyun Hwang@tmdgus0084](https://github.com/tmdgus0084): Project Manager
+- [Hyunwoo Park@lqez](https://github.com/lqez): Fixing typo
+- [@Bgh0602](https://github.com/Bgh0602): English translation
+- [@sjbhm18](https://github.com/sjbhm18): Proofreading all sentences in Korean(Original Ver.) and translating them into English/Japanese
