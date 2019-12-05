@@ -18,7 +18,7 @@ On September 20, 2019, at 2:00 a.m., Apple began to release iOS 13, a new operat
 
 Why should we use Dark Mode? That's because it's in fashion these days and looks cool? There's a more fundamental reason in this question.
 
-The most important purpose of a webpage is to convey the information on the webpage clearly to the user. Movie theater staffs turn off the lights in the theater so that they make the inside space dark before the movie starts. That's because If the surrounding elements are too fancy or conspicuous, the focus on the central contents is likely to be distributed outside. Likewise, many dark environments, including Dark Mode, allow you to focus more on the central contents than on the Many dark environments, including dark mode, allow you to focus more on the central content than on the surrounding elements. The simple UI design patterns that we use these days are in a similar vein.
+The most important purpose of a webpage is to convey the information on the webpage clearly to the user. Movie theater staffs turn off the lights in the theater so that they make the inside space dark before the movie starts. That's because the focus on the central contents is likely to be distributed outside when the surrounding elements are too fancy or conspicuous. Likewise, many dark environments, including Dark Mode, allow you to focus more on the central contents than on the surrounding elements. The simple UI design patterns that we use these days are in a similar vein.
 
 
 
