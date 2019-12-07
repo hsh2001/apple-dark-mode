@@ -20,7 +20,13 @@ Why should we use Dark Mode? That's because it's in fashion these days and looks
 
 The most important purpose of a webpage is to convey the information on the webpage clearly to the user. Movie theater staffs turn off the lights in the theater so that they make the inside space dark before the movie starts. That's because the focus on the central contents is likely to be distributed outside when the surrounding elements are too fancy or conspicuous. Likewise, many dark environments, including Dark Mode, allow you to focus more on the central contents than on the surrounding elements. The simple UI design patterns that we use these days are in a similar vein.
 
+Developers have a duty to make the software easy to use for all users regardless of whether or not they have disability. Apple's 'VoiceOver' is an accessibility tool, Apple's flagship for blind people, and that's why many blind people choose the iPhone. In addition, the function of "inverting the colors" in entire screen helped many users that have low vision or is sensitive to bright lights. 
 
+Likewise, Dark Mode also can be very helpful for having a good effect on users, who have low vision or is sensitive to bright lights, by reducing their eyestrain. You might be anxious that it might be possible to turned into bright colors again when you visit a webpage of using Dark Mode with the function of inverting colors turned on, but you don't have to be worried! The function of Apple's "Smart Invert" is working to invert colors of screen in accordance with checking whether or not the webpage is using Dark Mode, and the function doesn't invert the color of the screen if the webpage is using Dark Mode.
+
+Imagine that a user unlock a dark lock screen in his or her smartphone, open a dark web browser, and access your web site by entering an address in a dark address bar. Oops!! The user whose device is using Dark Mode is very suprised by dazzling lights when the user access your website that isn't supporting Dark Mode. ~Eye doctor, I can't see at all!!~ Developers have to offer users a unified UX. The different UI from the environment of users makes them feel like leaving your website as soon as possible.
+
+For this reason, I'll tell you how to automatically change the website to a dark design when users using Dark Mode access it.
 
 ## Recognizing Dark mode
 You have to check out whether or not the device of the users is allowed to use Dark Mode in order to apply Dark Mode the moment users access a website. Here's how you can check for it on CSS and JavaScript:
