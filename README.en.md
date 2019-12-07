@@ -6,20 +6,18 @@
 
 ## Table of contents
 1. [What is the Dark mode?](#what-is-the-dark-mode)
-2. [Why should we use Dark Mode ?](#why-should-we-use-dark-mode)
+2. [Why should we use Dark Mode?](#why-should-we-use-dark-mode)
 3. [Recognizing Dark mode](#recognizing-dark-mode)
 4. [Turn Dark mode on and off](#turn-dark-mode-on-and-off)
 5. [Animation](#animation)
 
 ## What is the Dark Mode?
-On September 20, 2019, at 6:00 p.m., Apple began to release iOS 13, a new operating system for iPhone and iPod Touch. In addition, at WWDC2019 (Apple WorldWide Developers Conference) held in early June of the same year, developers in Apple provided a way for web developers to control Dark Mode for iOS13 and MacOS Mojave. Unlike the previous UI, which shows black letters on the white background, Dark Mode shows white letters on the black background. Because the black color is used a lot in the design of the screen, Dark Mode has the merit that it can reduce power consumption in devices that use OLED displays such as the iPhone 11Pro and relieve eyestrain. For more unified UI and UX, I’ll tell you how to automatically change a website to a dark design when users utilizing Dark Mode access the website for more unified UI and UX.
+On September 20, 2019, at 6:00 p.m., Apple began to release iOS 13, a new operating system for iPhone and iPod Touch. In addition, at WWDC2019 (Apple WorldWide Developers Conference) held in early June of the same year, developers in Apple provided a way for web developers to control Dark Mode for iOS13 and MacOS Mojave. Unlike the previous UI, which shows black letters on the white background, Dark Mode shows white letters on the black background. 
 
-
-## Why should we use Dark Mode ?
-
+## Why should we use Dark Mode?
 Why should we use Dark Mode? That's because it's in fashion these days and looks cool? There's a more fundamental reason in this question.
 
-The most important purpose of a webpage is to convey the information on the webpage clearly to the user. Movie theater staffs turn off the lights in the theater so that they make the inside space dark before the movie starts. That's because the focus on the central contents is likely to be distributed outside when the surrounding elements are too fancy or conspicuous. Likewise, many dark environments, including Dark Mode, allow you to focus more on the central contents than on the surrounding elements. The simple UI design patterns that we use these days are in a similar vein.
+The most important purpose of a webpage is to convey the information on the webpage clearly to the users. Movie theater staffs turn off the lights in the theater so that they make the inside space dark before the movie starts. That's because the focus on the central contents is likely to be distributed outside when the surrounding elements are too fancy or conspicuous. Likewise, many dark environments, including Dark Mode, allow you to focus more on the central contents than on the surrounding elements. The simple UI design patterns that we use these days are in a similar vein.
 
 Developers have a duty to make the software easy to use for all users regardless of whether or not they have disability. Apple's 'VoiceOver' is an accessibility tool, Apple's flagship for blind people, and that's why many blind people choose the iPhone. In addition, the function of "inverting the colors" in entire screen helped many users that have low vision or is sensitive to bright lights. 
 
