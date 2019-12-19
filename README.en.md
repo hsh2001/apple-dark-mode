@@ -12,23 +12,23 @@
 5. [Animation](#animation)
 
 ## What is the Dark Mode?
-On September 20, 2019, at 6:00 p.m., Apple began to release iOS 13, a new operating system for iPhone and iPod Touch. In addition, at WWDC2019 (Apple WorldWide Developers Conference) held in early June of the same year, developers in Apple provided a way for web developers to control Dark Mode for iOS13 and MacOS Mojave. Unlike the previous UI, which shows black letters on the white background, Dark Mode shows white letters on the black background. 
+On September 20, 2019, at 6:00 p.m., Apple began to release iOS 13, a new operating system for iPhone and iPod Touch. In addition, at WWDC2019 (Apple WorldWide Developers Conference) held in early June of the same year, developers in Apple provided a way that web developers can control Dark Mode for iOS13 and MacOS Mojave. Unlike the previous UI, which shows black letters on the white background, Dark Mode shows white letters on the black background. 
 
 ## Why should we use Dark Mode?
-Why should we use Dark Mode? That's because it's in fashion these days and looks cool? There's a more fundamental reason in this question.
+Why should we use Dark Mode? That's because it's in fashion these days and looks cool? There're more fundamental reasons in this question.
 
-The most important purpose of a webpage is to convey the information on the webpage clearly to the users. Movie theater staffs turn off the lights in the theater so that they make the inside space dark before the movie starts. That's because the focus on the central contents is likely to be distributed outside when the surrounding elements are too fancy or conspicuous. Likewise, many dark environments, including Dark Mode, allow you to focus more on the central contents than on the surrounding elements. The simple UI design patterns that we use these days are in a similar vein.
+The most important purpose of webpages is to clearly convey information of the webpage to the users. Movie theater staffs turn off the lights in the theater so that they make the inside space dark before the movie starts. That's because the focus on the central contents is likely to be distributed outside when the surrounding elements are too fancy or conspicuous. Therefore, dark environments including Dark Mode allow you to focus more on the central contents than on the surrounding elements because dark things aren't usually fancy or conspicuous. The simple UI design patterns that we use these days are in the same vein.
 
-Developers have a duty to make the software easy to use for all users regardless of whether or not they have disability. Apple's 'VoiceOver' is an accessibility tool, Apple's flagship for blind people, and that's why many blind people choose the iPhone. In addition, the function of "inverting the colors" in entire screen helped many users that have low vision or is sensitive to bright lights. 
+Developers have a duty to make software easy for all users to use regardless of whether or not they have disability. Apple's 'VoiceOver' is an accessibility tool, Apple's flagship for blind people, and that's why many blind people choose Apple's iPhone. In addition, the function of "inverting colors" on entire screen is helpful for many users that have low vision or is sensitive to bright lights. 
 
-Likewise, Dark Mode also can be very helpful for having a good effect on users, who have low vision or is sensitive to bright lights, by reducing their eyestrain. You might be anxious that it might be possible to turned into bright colors again when you visit a webpage of using Dark Mode with the function of inverting colors turned on, but you don't have to be worried! The function of Apple's "Smart Invert" is working to invert colors of screen in accordance with checking whether or not the webpage is using Dark Mode, and the function doesn't invert the color of the screen if the webpage is using Dark Mode.
+Likewise, Dark Mode also can have a good effect on users, who have low vision or is sensitive to bright lights, by reducing their eyestrain. You may be anxious that it might be turned into bright colors again when you visit a webpage using Dark Mode with the function of inverting colors turned on, but you don't have to be worried! The function of Apple's "Smart Invert" is working to invert colors of screen in accordance with checking whether or not the webpage is using Dark Mode, and the function doesn't invert the color of the screen when the webpage is using Dark Mode.
 
-Imagine that a user unlock a dark lock screen in his or her smartphone, open a dark web browser, and access your web site by entering an address in a dark address bar. Oops!! The user whose device is using Dark Mode is very suprised by dazzling lights when the user access your website that isn't supporting Dark Mode. ~Eye doctor, I can't see at all!!~ Developers have to offer users a unified UX. The different UI from the environment of users makes them feel like leaving your website as soon as possible.
+Imagine that a user unlock dark lock screen in his or her smartphone, open dark web browser, and access your web site by entering an address in dark address bar. Oops!! The user whose device is using Dark Mode is very suprised by dazzling lights when the user access your website that isn't supporting Dark Mode. ~Doctor, I can't see at all!!~ Developers have to offer users unified UX. The different UI from the environment of users might make them feel like leaving your website as soon as possible.
 
-For this reason, I'll tell you how to automatically change the website to a dark design when users using Dark Mode access it.
+For this reason, I'll tell you how to automatically change the website to dark design when users using Dark Mode access it.
 
 ## Recognizing Dark mode
-You have to check out whether or not the device of the users is allowed to use Dark Mode in order to apply Dark Mode the moment users access a website. Here's how you can check for it on CSS and JavaScript:
+You have to check out whether or not the device of users is allowed to use Dark Mode so as to apply Dark Mode the moment users access a website. Here's how you can check for it on CSS and JavaScript:
 
 #### CSS
 CSS supports a `prefer-color-cheme` media query that tells you what kind of theme the device of users has. `prefers-color-cheme` can have the following values:
@@ -37,7 +37,7 @@ CSS supports a `prefer-color-cheme` media query that tells you what kind of them
 - light: Using light mode.
 - dark: Using Dark Mode.
 
-Therefore, you can write CSS codes that work only for users who are using Dark Mode with the code below:
+Therefore, you can write CSS codes, which work only for users using Dark Mode, with the code below:
 ```css
 @media (prefers-color-scheme: dark) {
   body {
@@ -47,10 +47,10 @@ Therefore, you can write CSS codes that work only for users who are using Dark M
 }
 ```
 
-However, some browsers may don’t support `prefers-color-cheme` media queries and have different values from the settings of system-theme on the device of users.
+However, some browsers may don’t support `prefers-color-cheme` media queries and have different values from the settings of system-theme on the device of the users.
 
  - ✅ : Supporting prefers-color-cheme media queries.
- - ❌ : Not supporting it or having different values from the settings of system-theme on the device of users.
+ - ❌ : Not supporting them or having different values from the settings of system-theme on the device of users.
 
 | OS / Browser  | Safari | Chrome | Firefox | Whale |
 | ------------- |:------:|:------:|:-------:|:-----:|
@@ -60,7 +60,7 @@ However, some browsers may don’t support `prefers-color-cheme` media queries a
 
 
 #### JavaScript
-In JavaScript, after referencing the media query of the CSS, you check out whether or not the device of users is supporting the `prefers-color-cheme` media query, determining compatibility of the device
+In JavaScript, after referencing the media query of CSS, you check out whether or not the device of users is supporting the `prefers-color-cheme` media query, determining compatibility of the device.
 
 ```javascript
 const darkModeMeidaQuery = window.matchMedia('(prefers-color-scheme: dark)');
@@ -77,7 +77,7 @@ darkModeMeidaQuery.addListener(updateForDarkModeChange);
 updateForDarkModeChange();
 ```
 
-You can succeed in supporting Dark Mode by applying the following code:
+You can succeed to support Dark Mode by applying the following code:
 
 ```css
 @media (prefers-color-scheme: dark) {
@@ -129,10 +129,10 @@ footer {
 ```
 
 ## Turn Dark Mode on and off
-The recognition function of Dark Mode works only on some browsers and devices, including iOS13, iPadOS, MacOS Mojave. Dark Mode doesn’t work when you don't use the latest apple devices and the browsers supporting the function of prefers-color-scheme media query. From now on, I'll tell you how to make Dark Mode available to users who use a device that does not support Dark Mode function.
+The recognition function of Dark Mode works only on some browsers and devices, including iOS13, iPadOS, and MacOS Mojave. Dark Mode doesn’t work in case you don't use the latest apple device and the browser which are supporting the function of prefers-color-scheme media query. From now on, I'll tell you how to make Dark Mode available for users who use a device that doesn't support Dark Mode function.
 
 
-You can enable or disable the CSS codes by manipulating the attribute of `media` in `link` tag that you added in order to detach the file. First, make the buttons so that you can control `darkModeSwitch`, the function of JavaScript that turns Dark Mode on/off.
+You can enable or disable the CSS codes by manipulating the attribute of `media` in `link` tag that you added in order to detach the file. First, make buttons so that you can control `darkModeSwitch`, the function of JavaScript that turns Dark Mode on/off.
 
 
 
@@ -166,12 +166,12 @@ function darkModeSwitch(status) {
 }
 ```
 
-By doing this, you can add function of turning on/off Dark Mode. However, Dark Mode will be turned off when users reload the page in your browser or move from one page to another. This problem will be solved if you save the set value in your browser by using Cookie and let the web-page displayed according to the value.
+By doing this, you can add function of turning on/off Dark Mode. However, Dark Mode will be turned off when users reload the page in your browser or move from one page to another. This problem will be solved when you save the set value in your browser by using Cookie and let the webpage displayed according to the value.
 
 In this article, I use the `JavaScript Cookie` library for controlling cookies.
 [Learn more](https://github.com/js-cookie/js-cookie)
 
-First, save it as a cookie when Dark Mode is turned on. You should save the set value after converting it into an integer type because Cookies store values as a string. And add `isDarkMode` function that obtains this value.
+First, save it as a cookie when Dark Mode is turned on. You have to save the set value after converting it into an integer type because Cookies store values as a string. And add `isDarkMode` function that obtains this value.
 ```javascript
 function isDarkMode() {
   return Cookies.get('darkmode');
@@ -185,7 +185,7 @@ function darkModeSwitch(status) {
 }
 ```
 
-Programs should manipulate the web page according to this value when the webpage starts. If there is a cookie value, they manipulate the webpage according to the cookie value instead of using the set value of Dark Mode in the device of users. They convert the stored value into a integer because it is a integer string.
+Programs have to manipulate the webpage according to this value when the webpage starts. If there is a cookie value, they manipulate the webpage according to the cookie value instead of using the set value of Dark Mode in the device of users. They convert the stored value into a integer because it is a integer string.
 ```javascript
 //the preface omitted
 document.addEventListener('DOMContentLoaded', function () {
@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function () {
 By doing this, Dark Mode can fully support to all users.
 
 ## Animation
-You can get much higher quality design of web site if you add an animation that is operated whenever Dark Mode is turned on.
+You can get much higher quality design of website after you add an animation that is operated whenever Dark Mode is turned on.
 
 ![Animation](img/ani.gif)
 ```css
